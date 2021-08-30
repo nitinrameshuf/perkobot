@@ -1,7 +1,7 @@
 <launch>
 
     <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop"/>
-    <node pkg="perkobot" type="diff_drive_converter.py" name="diff_drive"/>
+    <node pkg="perkobot_control" type="diff_drive_converter.py" name="diff_drive"/>
     <node pkg="odrive_interface" type="odrive_controller.py" name="odrive"/>
 
 

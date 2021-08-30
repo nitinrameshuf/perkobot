@@ -6,7 +6,7 @@ from geometry_msgs.msg import Twist
 from odrive_interface.msg import VelocityControl
 from odrive_interface.srv import *
 
-pub = rospy.Publisher("odrive_cmd_vel", VelocityControl, queue_size=10)
+pub = rospy.Publisher("odrive_cmd_vel", VelocityControl, queue_size=1)
 
 def callback(data):
     global pub

@@ -3,8 +3,6 @@
     <node pkg="odrive_interface" type="odrive_controller.py" name="odrive" required="true" output="log"/>
     <node pkg="perkobot_control" type="diff_drive_converter.py" name="diff_drive"/>
     <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
-    
-    
 
 
 </launch>

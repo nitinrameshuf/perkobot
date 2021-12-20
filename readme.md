@@ -2,11 +2,14 @@
 
 This is the repository for the SmartSystems Lab's custom autonomous robot: Perkobot
 
-## Getting Started
-The IP address for the robot changes for some reason, even though I set it to static, maybe there is more setup that is required, so you will have to plug in a mouse, keyboard, and monitor into the Jetson Xavier to login and verify the IP so you can SSH into it.
+## Documentation
 
-The password to login is: **password1234**
+### SSH'ing to the Robot
+The robot automatically connects to the TP-Link_SSL WiFi on boot up, so if that WiFi is no longer available, none of this will work.
 
+The IP address for the robot should be static, 192.168.1.107, so you should be able to ssh into it by doing ```ssh bobdabot@192.168.1.07``` where the password is ```password1234```
+
+If you cannot ssh because it is not responding, you may have to plug in an external monitor, keyboard, and mouse, and figure out what happened to the WiFi or IP address.
 
 **Before you can use this package you have to add the Odrive Driver package I created; which can be found [here](https://github.com/NicoPowers/odrive_interface).**
 

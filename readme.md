@@ -24,7 +24,7 @@ If you cannot ssh because it is not responding, you will have to plug in an exte
 
 ### Add more ODrive functionality
 
-1. Right now the velocity being sent to the ODrive isn't the real velocity of the robot, that it is not taking into account the gear reduction ratio and the circumference of the wheel, so the next step is to make it where the desired velocity we want gets scaled before sending it to the odrive. 
+1. Right now the velocity being sent to the ODrive isn't the real velocity of the robot; because it is not taking into account the gear reduction ratio and the circumference of the wheel, so the next step is to make a node that does the neccessary math to scale the input velocity and send a modified velocity value to the ODrive that reflects the desired velocity. You may also be able to use the diff_drive_controller package, there seems to be options for configuring this kind of thing.
 2. Add some functionality to retrieve the current velocity of each wheel to use for odometry (you may assume the velocity you set is the real velocity, and this may work, but it should use the real velocity to calculate the odometry for best results)
 3. Ensure watchdog still works after modifying the controller; it should timeout after 2 seconds of not receiving data. You can modify this by changing the ```watchdog_timeout``` in the ```odrive_controller.py``` file in the odrive_interface package.
 

@@ -9,7 +9,7 @@ The robot automatically connects to the TP-Link_SSL WiFi on boot up, so if that 
 
 The IP address for the robot should be static, 192.168.1.107, so you should be able to ssh into it by doing ```ssh bobdabot@192.168.1.07``` where the password is ```password1234```
 
-If you cannot ssh because it is not responding, you may have to plug in an external monitor, keyboard, and mouse, and figure out what happened to the WiFi or IP address.
+If you cannot ssh because it is not responding, you will have to plug in an external monitor, keyboard, and mouse, and figure out what happened to the WiFi or IP address.
 
 **Before you can use this package you have to add the Odrive Driver package I created; which can be found [here](https://github.com/NicoPowers/odrive_interface).**
 

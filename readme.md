@@ -17,4 +17,11 @@ The password to login is: **password1234**
 3. Perform ```catkin_make``` in you catkin_ws and then source the devel/setup.bash
 4. Launch the teleop node by doing ```roslaunch perkobot teleop.launch``` (if you have problems finding the launch file, you may have to do ```rosls``` or ```roscd perkobot``` first.
 
+## Next steps for making the robot autonomous
 
+### Add more ODrive functionality
+1. Add some functionality to retrieve the current velocity of each wheel to use for odometry (you may assume the velocity you set is the real velocity, and this may work, but it should use the real velocity to calculate the odometry for best results)
+2. Ensure watchdog still works after modifying the controller; it should timeout after 2 seconds of not receiving data. You can modify this by changing the ```watchdog_timeout``` in the ```odrive_controller.py``` file in the odrive_interface package.
+
+### Ensure the RPLidar works with ROS
+1. 
